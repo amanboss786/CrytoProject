@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Crypto Tracker</title>
 </head>
 <body>
@@ -12,13 +12,13 @@
         <div class="row justify-content-center">
             <h1 class="col-md-7 text-center">Crypto Tracker</h1>
             <h4 class="col-md-7 text-center">By Aman</h4>
-            <div class="col-md-6 justify-content-center">
-                <div class="col-md-10">
+            <div class="col-md-6 row justify-content-center">
+                <div class="col-10">
                     <form action="" id="searchForm">
                         <div class="form-row">
                             <div class="col-12 form-group">
-                                <label for="xyz"><b>Coin type</b></label>
-                                <select name="cointype" class="form-control" id="xyz">
+                                <label for="xyz"><b>coin type</b></label>
+                                <select name="coinType" class="form-control" id="xyz">
                                     <option value="btc-usd">Bitcoin - USD</option>
                                     <option value="doge-usd">Dogecoin - USD</option>
                                     <option value="eth-usd">Etherum - USD</option>
@@ -29,52 +29,19 @@
                         </div>
                         
                         <button type="submit" class="col-12 btn btn-primary">Get Price</button>
-                     </form>
+                    </form>
                 </div>
             </div>
             <div class="col-md-7 text-center row justify-content-center">
-                <table class="col-md-7 m-2" border="1px">
-                    <tr>
-                        <td>
-                            Property
-                        </td>
-                        <td>
-                            Value
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            BTC
-                        </td>
-                        <td ></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Volume
-                        </td>
-                        <td ></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Change
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Last Update
-                        </td>
-                        <td></td>
-                    </tr>
+                <table class="col-md-7 m-2" border="1px" id="tableResult">
+                    
                 </table>
-                
             </div>
             
         </div>
+        
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
     <script src="app.js"></script>
-
 </body>
 </html>

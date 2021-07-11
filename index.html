@@ -1,47 +1,42 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Crypto Tracker</title>
+	<meta name="viewport" content="width=device.width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="cry.css">
+	<title>Aman's Crypto Tracker</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row justify-content-center">
-            <h1 class="col-md-7 text-center">Crypto Tracker</h1>
-            <h4 class="col-md-7 text-center">By Aman</h4>
-            <div class="col-md-6 row justify-content-center">
-                <div class="col-10">
-                    <form action="" id="searchForm">
-                        <div class="form-row">
-                            <div class="col-12 form-group">
-                                <label for="xyz"><b>coin type</b></label>
-                                <select name="coinType" class="form-control" id="xyz">
-                                    <option value="btc-usd">Bitcoin - USD</option>
-                                    <option value="doge-usd">Dogecoin - USD</option>
-                                    <option value="eth-usd">Etherum - USD</option>
-                                    <option value="btc-doge">Bitcoin - Dogecoin</option>
-                                    <option value="bnb-usd">Binance - USD</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <button type="submit" class="col-12 btn btn-primary">Get Price</button>
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-7 text-center row justify-content-center">
-                <table class="col-md-7 m-2" border="1px" id="tableResult">
-                    
-                </table>
-            </div>
-            
-        </div>
-        
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="app.js"></script>
+	<div class="container" style="background-image: 'bitcoinimage.jpg';">
+		<div class="row justify-content-center">
+			<h1 class="col-md-7 text-center text-white bg-beign">Crypto Tracker By Aman</h1>
+			<div class="col-7 rounded p-4"  style="background-color:#660000">
+				<form action="" id="searchForm">
+					<div class="form-row">
+						<div class="col-12 form-group">
+							<label for="seltype" class="text-success"><b>Select Coin Type:</b></label>
+							<select name="coinType" id="seltype" class="form-control">
+								<option value="btc-usd" class="bg-info">Bitcoin-USD</option>
+								<option value="doge-usd" class="bg-warning">Dogecoin-USD</option>
+								<option value="eth-usd" class="bg-info">Etherun-USD</option>
+								<option value="btc-doge" class="bg-warning">Bitcoin-Dogecoin</option>
+								<option value="bnb-usd" class="bg-info">Binance-USD</option>
+							</select>
+						</div>
+					</div>
+					<button type="submit" class="col-12 btn btn-info">Get Price</button>
+				</form>
+			</div>
+		</div>
+	<div class="row text-center justify-content-center">
+		<table class="col-md-6 m-5 table-hover table-bordered rounded" id="tabRes">
+			
+		</table>
+	</div>
+	</div>
+	<script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: 'c7c5246a-58df-4b33-bac8-be80b6272ea6', f: true }); done = true; } }; })();</script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="app.js"></script>
 </body>
 </html>

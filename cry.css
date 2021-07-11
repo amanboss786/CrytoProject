@@ -1,0 +1,10 @@
+body{
+    background-image: url("bitcoinimage.jpg");
+
+}
+h1,h4{
+    color: cornsilk;
+}
+button{
+    background-color: darkgreen;
+}
